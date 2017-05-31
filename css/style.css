@@ -1,0 +1,209 @@
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/calvin_hobbes.jpg) center top fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6em;
+  letter-spacing: .04em;
+  color: #393939;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .05em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: .5em;
+  margin-bottom: 2em;
+  border-bottom: .5px solid #ccc;
+  color: #0E1826;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: .5em;
+  border-top: 1px solid #ccc;
+}
+
+h4 {
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  opacity: .6;
+}
+
+i {
+  margin: .5em .5em;
+  color: white;
+}
+
+header {
+  /*height: 90vh;*/
+  margin-top: 0;
+  width: 100%;
+  position: fixed;
+  /*z-index: -99;*/
+}
+
+main {
+  background-color: #FEFEFE;
+  top: 100vh;
+  position: relative;
+  z-index: 1000;
+}
+
+
+.flexy {
+  display: flex;
+}
+
+a:hover, btn:hover, i:hover {
+  color: #EBC83B;
+}
+
+.btn:hover {
+  background-color: #EBC83B;
+  color: #fff;
+  opacity: 0.6;
+  border-color: #EBC83B;
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.header {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+}
+
+
+/*@media screen and (max-width: 600px) {
+  main {
+    top: 80vh;
+  }
+  header {
+    height: 80vh;
+  }
+  .header {
+    height: 80vh;
+  }
+}*/
+
+.contactIcons {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  /*z-index: 1000;*/
+}
+
+.glyphicon-menu-down {
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+
+.biography {
+  background: #F5F5F5;
+}
+
+
+/*making the sticky headers solid*/
+
+.projects .h2stick {
+  background-color: #FEFEFE;
+}
+
+.biography .h2stick, .ethos .h2stick {
+  background-color: #F5F5F5;
+}
+
+.h2stick {
+  background-color: inherit;
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: .1em;
+  top: 0;
+  z-index: 2100;
+}
+
+.thumbnail {
+  padding: none !important;
+  transition: all 500ms ease-in;
+  opacity: 0.6;
+}
+
+.thumbnail:hover, .thumbnail:active {
+  opacity: 1;
+}
+
+.bio>div {
+  margin-bottom: 2em;
+}
+
+.contact {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .noMobile {
+    display: none;
+  }
+}
+
+.email {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.footer {
+  justify-content: space-around;
+  font-size: .8em;
+  margin: .5em;
+  opacity: 0.5;
+}
+
+
+/*Back to top */
+
+.back-to-top {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: 10px;
+  z-index: 2100;
+  display: none;
+  color: #EBC83B;
+  background-color: #555;
+  opacity: .5;
+  border-radius: 100%;
+}
+
+.back-to-top:hover, .back-to-top:active {
+  background-color: #EBC83B;
+  opacity: .8;
+  -webkit-animation: back-to-top .6s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: back-to-top .6s;
+  /* Firefox < 16 */
+  -ms-animation: back-to-top .6s;
+  /* Internet Explorer */
+  -o-animation: back-to-top .6s;
+  /* Opera < 12.1 */
+  animation: back-to-top .6s;
+}
