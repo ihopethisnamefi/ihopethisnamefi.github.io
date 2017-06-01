@@ -23,6 +23,14 @@
 </head>
 
 <body>
+  <div id="myCarousel" class="carousel container slide">
+  <div class="carousel-inner">
+        <div class="active item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+  </div>
+  </div>
   <header>
     <!-- flexy class is flexbox -->
     <div class="header flexy">
@@ -87,11 +95,28 @@
       </div>
     </footer>
   </main>
+ 
+	<script>
+	//Carousel based on div name "item"
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("item");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 4000); // Change image every 4 seconds
+	}
+	</script> 
   
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/javascript.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/javascript.js"></script>
 </body>
 
 </html>

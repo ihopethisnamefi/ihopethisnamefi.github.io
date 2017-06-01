@@ -1,5 +1,5 @@
-body {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/calvin_hobbes2.jpg) center top fixed;
+/*body {
+ /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/calvin_hobbes2.jpg) center top fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,6 +8,73 @@ body {
   line-height: 1.6em;
   letter-spacing: .04em;
   color: #393939;
+  
+}*/
+
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    /*background: url(../IMG/calvin_hobbes2.jpg);*/
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/calvin_hobbes2.jpg) center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    color: #393939;
+    left:0;
+}
+.carousel .two {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/jon_bjj1.jpg) center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    color: #393939;
+    left:0;
+}
+.carousel .three {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/calvin_hobbes3.jpg) center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    color: #393939;
+    left:0;
+}
+.carousel .four {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/notre_dame.jpg) center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    color: #393939;
+    left:0;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
 }
 
 p {
