@@ -1,9 +1,28 @@
 $(document).ready(function() {
 
-  // appends html to body element - make sure you are linked to bootstrap icon fonts.
-  $('body').append('<a class="back-to-top" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>');
+  $('#myCarousel').carousel({
+    interval: false //no slide rotation
+  })
 
-  var offset = 400; // sets distance in pixels when back to top will appear
+  $('.carousel .item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+		  
+    if (next.next().length>0) {
+      next.next().children(':first-child').clone().appendTo($(this));
+    }
+    else {
+	  $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+	}
+  });
+
+  // appends html to body element - make sure you are linked to bootstrap icon fonts.
+ $('body').append('<a class="back-to-top" href="#"><i class="glyphicon glyphicon-chevron-up"></i></a>');
+
+ var offset = 400; // sets distance in pixels when back to top will appear
   var fadeintime = 400; // fade in duration
   $(window).scroll(function() {
     if ($(this).scrollTop() > offset) {
@@ -21,5 +40,8 @@ $(document).ready(function() {
     return false;
 
   });
-
+  
 });
+
+
+
