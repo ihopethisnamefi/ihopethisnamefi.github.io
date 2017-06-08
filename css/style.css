@@ -47,7 +47,7 @@
     left:0;
 }
 .slideshow .three {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/calvin_hobbes3.jpg) center top fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/Chess.jpg) center top fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -60,6 +60,18 @@
 }
 .slideshow .four {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/notre_dame.jpg) center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    color: #393939;
+    left:0;
+}
+.slideshow .five {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../IMG/calvin_hobbes3.jpg) center top fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
