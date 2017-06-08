@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $('#myCarousel').carousel({
-    interval: false //no slide rotation
+    interval: 4000 //4 second slide rotation
   })
 
   $('.carousel .item').each(function(){
