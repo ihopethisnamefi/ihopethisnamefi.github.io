@@ -202,7 +202,7 @@ slideshow();
 function slideshow() {
     var i;
     var x = document.getElementsByClassName("picture");
-    for (i = 0; i < x.length; i++) {
+    for (i = x.length; i >= 0; i--) {
        x[i].style.display = "none";  
     }
     myIndex++;
